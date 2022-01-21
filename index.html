@@ -10,7 +10,7 @@
 <body>
     <!-- header starts here  -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -24,16 +24,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shows</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Backpack</a>
+                      <a class="nav-link" href="#bags">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
                   </li>
                 </ul>
               </div>
@@ -127,7 +124,7 @@
                 </div>
         </section>
         <!-- shoes category starts -->
-        <section class="container">
+        <section class="container" id="shoes">
             <h1>Shoes</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -171,7 +168,7 @@
               </div>
         </section>
         <!-- bag category starts -->
-        <section class="container my-5">
+        <section id="bags" class="container my-5">
             <h1>Bagpack</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -215,7 +212,7 @@
               </div>
         </section>
         <!-- subscribe starts -->
-        <section class="container bg-info d-flex justify-content-center align-items-center rounded-3" style="height: 300px">
+        <section class="container bg-info d-flex justify-content-center align-items-center rounded-3" id="subscribe" style="height: 300px">
             <div>
               <h1 class="m-1">Let's Stay In Touch</h1>
               <p class="m-1">Get updates on sales,specials and more</p>
