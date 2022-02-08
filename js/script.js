@@ -38,3 +38,16 @@ forminput.addEventListener('keyup',function(event){
         sumbmitButton.setAttribute('disabled',true);
     }
 })
+
+//image chainging on mouseenter
+const oldImgArray = ['images/shoes/shoe-1.png','images/shoes/shoe-2.png','images/shoes/shoe-3.png','images/bags/bag-1.png','images/bags/bag-2.png','images/bags/bag-3.png']
+const imgArray = ['extra-image/extra1.jpg','extra-image/extra2.jpeg','extra-image/extra3.jpg','extra-image/extra4.jpeg','extra-image/extra5.jpg','extra-image/extra6.jpg'];
+const imgChange = document.getElementsByClassName('img-change');
+for(let i = 0;i<imgChange.length;i++){
+    imgChange[i].addEventListener('mouseenter',function(event){
+        event.target.setAttribute('src',imgArray[i]);
+    });
+    imgChange[i].addEventListener('mouseleave',function(event){
+        event.target.setAttribute('src',oldImgArray[i]);
+    });
+}
