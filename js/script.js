@@ -50,4 +50,13 @@ for(let i = 0;i<imgChange.length;i++){
     imgChange[i].addEventListener('mouseleave',function(event){
         event.target.setAttribute('src',oldImgArray[i]);
     });
-}
+};
+
+//changing the subscribe section background color on double click
+const subscribe = document.getElementById('subscribe');
+subscribe.addEventListener('dblclick',function(event){
+    const targetId = event.target.getAttribute('id');
+    if(targetId == 'subscribe'){
+        subscribe.classList.toggle('backgroundChange');
+    }
+})
